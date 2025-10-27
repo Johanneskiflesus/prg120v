@@ -1,5 +1,6 @@
 
-unction bekreft() {
+function bekreft() {
     return confirm("Er du sikker?");
   }
+  
   

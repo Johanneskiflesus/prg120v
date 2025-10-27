@@ -1,15 +1,12 @@
 
 <?php
-/* db-tilkobling.php
-   Kobler PHP til MySQL-databasen på Dokploy
-*/
-
-$host = "b-studentsql-1.usn.no";                 // DB_HOST fra Dokploy
-$username = "255435";              // DB_USER fra Dokploy
-$password = "7e60255435";             // DB_PASSWORD fra Dokploy
-$database = "255435";  // DB_DATABASE fra Dokploy
+$host = "b-studentsql-1.usn.no";
+$username = "255435";
+$password = "7e60255435";
+$database = "255435";
 
 $db = mysqli_connect($host, $username, $password, $database)
   or die("Feil: ikke kontakt med database-server");
-?>
 
+mysqli_set_charset($db, "utf8");
+?>
